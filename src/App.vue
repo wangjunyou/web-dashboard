@@ -1,17 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png"/>
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite"/>
+  <!--  <img alt="Vue logo" src="./assets/logo.png"/>-->
+  <!--  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite"/>-->
+  <n-config-provider>
+    <n-message-provider>
+      <hello-world msg="Hello Vue 3 + TypeScript + Vite" />
+    </n-message-provider>
+  </n-config-provider>
 </template>
 
 <script lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import {defineComponent} from "vue";
+import { defineComponent } from "vue";
+import HelloWorld from "./components/HelloWorld.vue";
+import { NConfigProvider, NMessageProvider } from "naive-ui";
 
 export default defineComponent({
   components: {
-    HelloWorld
-  }
-})
+    HelloWorld,
+    NConfigProvider,
+    NMessageProvider,
+  },
+});
 </script>
 
 <style>

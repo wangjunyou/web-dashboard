@@ -18,10 +18,10 @@
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
   </p>
 
-  <p>{{totals}}</p>
+  <p>{{ totals }}</p>
   <button type="button" @click="counts">count is: {{ count }}</button>
   &nbsp;
-  <n-button type="primary" @click="counts">count is: {{ count}}</n-button>
+  <n-button type="primary" @click="counts">count is: {{ count }}</n-button>
   <!--  <button type="button" @click=""-->
   <p>
     Edit
@@ -30,35 +30,34 @@
 </template>
 
 <script lang="ts">
-import {defineComponent,ref} from 'vue'
-import {NButton} from 'naive-ui'
+import { defineComponent, ref } from "vue";
+import { NButton } from "naive-ui";
 
 export default defineComponent({
-  name: 'HelloWorld',
+  name: "HelloWorld",
   components: {
-    NButton
+    NButton,
   },
   props: {
-    msg: String
+    msg: String,
   },
   setup() {
-    const count = ref(0)
-    return {count}
+    const count = ref(0);
+    return { count };
   },
   data() {
     return {
-      totals: 0
-    }
+      totals: 0,
+    };
   },
   methods: {
     counts() {
-      console.log(this.count+'=='+this.msg+'=='+this.totals);
+      console.log(this.count + "==" + this.msg + "==" + this.totals);
       this.count++;
       this.totals++;
-    }
-  }
-
-})
+    },
+  },
+});
 </script>
 
 <style scoped>
