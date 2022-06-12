@@ -60,25 +60,12 @@ module.exports = {
       }
     ],
     'space-before-function-paren': 'off',
-    'vue/attributes-order': 'off',
-    'vue/one-component-per-file': 'off',
-    'vue/html-closing-bracket-newline': 'off',
-    'vue/max-attributes-per-line': 'off',
-    'vue/multiline-html-element-content-newline': 'off',
-    'vue/singleline-html-element-content-newline': 'off',
-    'vue/attribute-hyphenation': 'off',
-    'vue/require-default-prop': 'off',
-    'vue/html-self-closing': [
-      'error',
-      {
-        html: {
-          void: 'always',
-          normal: 'never',
-          component: 'always',
-        },
-        svg: 'always',
-        math: 'always',
-      },
-    ]
+    quotes: ['error', 'single'],
+    // 'comma-dangle': ['error', 'never'],
+    'vue/multi-word-component-names': 'off',
+    'vue/component-definition-name-casing': 'off',
+    'vue/require-valid-default-prop': 'off',
+    'no-console': 'error',
+    'vue/no-setup-props-destructure': 'off'
   }
 }

@@ -30,50 +30,50 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
-import { NButton } from "naive-ui";
+  import { defineComponent, ref } from 'vue'
+  import { NButton } from 'naive-ui'
 
-export default defineComponent({
-  name: "HelloWorld",
-  components: {
-    NButton,
-  },
-  props: {
-    msg: String,
-  },
-  setup() {
-    const count = ref(0);
-    return { count };
-  },
-  data() {
-    return {
-      totals: 0,
-    };
-  },
-  methods: {
-    counts() {
-      console.log(this.count + "==" + this.msg + "==" + this.totals);
-      this.count++;
-      this.totals++;
+  export default defineComponent({
+    name: 'HelloWorld',
+    components: {
+      NButton
     },
-  },
-});
+    props: {
+      msg: String
+    },
+    setup() {
+      const count = ref(0)
+      return { count }
+    },
+    data() {
+      return {
+        totals: 0
+      }
+    },
+    methods: {
+      counts() {
+        // console.log(this.count + "==" + this.msg + "==" + this.totals);
+        this.count++
+        this.totals++
+      }
+    }
+  })
 </script>
 
 <style scoped>
-a {
-  color: #42b983;
-}
+  a {
+    color: #42b983;
+  }
 
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
-}
+  label {
+    margin: 0 0.5em;
+    font-weight: bold;
+  }
 
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
-}
+  code {
+    background-color: #eee;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #304455;
+  }
 </style>
