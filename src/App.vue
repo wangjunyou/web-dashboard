@@ -3,7 +3,8 @@
   <!--  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite"/>-->
   <n-config-provider>
     <n-message-provider>
-      <hello-world msg="Hello Vue 3 + TypeScript + Vite" />
+<!--      <hello-world msg="Hello Vue 3 + TypeScript + Vite" />-->
+      <router-view/>
     </n-message-provider>
   </n-config-provider>
 </template>

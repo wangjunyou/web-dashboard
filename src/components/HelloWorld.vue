@@ -39,7 +39,10 @@
       NButton
     },
     props: {
-      msg: String
+      msg: {
+        type: String,
+        default: {}
+      }
     },
     setup() {
       const count = ref(0)
